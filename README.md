@@ -1,4 +1,4 @@
-# beeminder_toogl
+# Toggl to Beeminder
 
 ## Features
 
@@ -17,6 +17,7 @@ These installation steps should work for Mac OS X, Linux, or any other Unix syst
 ### Configuration
 
 First, you need to create a config file:
+
 `cp data/toggl.cfg.example data/toggl.cfg`
 
 Then edit toggl.cfg. The first part involves setting which toggl projects correspond to which beeminder goals. You need to enumerate all projects and goals here even if they have the same name!!!
@@ -32,6 +33,14 @@ Your beeminder_token can be found at https://www.beeminder.com/settings/advanced
 Your toggl_token can be found at https://www.toggl.com/app/profile
 
 Your beeminder user name is whatever you use to log into beeminder (obviously). Write it in lowercase.
+
+### Initializing
+
+The very first thing you absolutely need to do is run the script once.
+
+`python sync_toggl.py`.
+
+Any toogl entry that you created prior to running the script for the first time will be ignored. Every toggl entry that you subsequently create will be synchronized to beeminder.
 
 ### Making the script run repeatedly
 
