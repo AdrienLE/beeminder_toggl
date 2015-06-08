@@ -200,7 +200,7 @@ else:
                 # Otherwise, change the value by cancelling the previous entry and creating it again
                 # with the right time in the right project.
                 todo.append(('cancel', old_entries[strid], 'Project or time changed in toggl (from toogl_beeminder)'))
-                todo.append(('do', entry, 'Project or time changed in toggl (from toggl_beeminder)'))
+                todo.append(('do', entry, 'From toggl_beeminder'))
             # Remove the old entry because it is accounted for
             del old_entries[strid]
         else:
