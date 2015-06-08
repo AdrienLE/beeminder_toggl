@@ -1,0 +1,13 @@
+{
+  "project_to_goal": {
+    "lowercase toggl project": "beeminder_goal",
+    "second lowercase toggl project": "second_beeminder_goal"
+  },
+  "goal_to_time_unit": {
+    "beeminder_goal": "h",
+    "second_beeminder_goal": "s"
+  },
+  "beeminder_token": "<your beeminder token>",
+  "toggl_token": "<your toggl token>",
+  "beeminder_user": "<your beeminder username>"
+}
