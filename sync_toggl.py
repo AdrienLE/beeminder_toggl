@@ -11,11 +11,6 @@ import urllib
 
 me = singleton.SingleInstance() # will sys.exit(-1) if other instance is running
 
-while True:
-    pass
-
-ththtth
-
 base_dir = os.path.dirname(os.path.realpath(__file__))
 
 
