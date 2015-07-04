@@ -56,8 +56,9 @@ def gethttp(url, data=None, method='GET', api='toggl'):
     # HACK: We need to handle authorization using tokens and using PUT and DELETE requests   #
     #       with urllib. This requires this pretty hacky code.                               #
     ##########################################################################################
-    base64string = base64.encodestring('%s:%s' % (token, 'api_token')).replace('\n', '')
-    request.add_header("Authorization", "Basic %s" % base64string)
+    if api == 'toggl':
+        base64string = base64.encodestring('%s:%s' % (token, 'api_token')).replace('\n', '')
+        request.add_header("Authorization", "Basic %s" % base64string)
     request.get_method = lambda: method
     class PutRedirectHandler(urllib2.HTTPRedirectHandler):
         def redirect_request(self, req, fp, code, msg, headers, newurl):
