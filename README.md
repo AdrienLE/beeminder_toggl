@@ -52,7 +52,7 @@ This will open an editor with a cron configuration file. Add the following line 
 
 `* * * * * python <PATH_TO_THE_SCRIPT>/sync_toggl.py`
 
-Of course, replace <PATH_TO_THE_SCRIPT> with the path to the directory that contains sync_toggl.py (For example: `/User/yourname/beeminder_toggl/`).
+Of course, replace <PATH_TO_THE_SCRIPT> with the path to the directory that contains sync_toggl.py (For example: `/Users/yourname/beeminder_toggl/`).
 
 Then save and exit.
 
